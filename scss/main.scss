@@ -97,6 +97,7 @@ section{
             @include flexCenter(row);
             gap: 27px;
             overflow-x: scroll;
+            height: 54vh;
             .healthcare-container__cards{
                 width: max-content;
                 .healthcare-container__card{
@@ -134,68 +135,65 @@ section{
             }
         }
     }
-    .home-decoration-container{
-        @extend .healthcare-container;
-    }
 }
-// .home-decoration-container{
-//     width: 80%;
-//     margin: 61px auto 0;
-//     .home-decoration-container__cards-container--flex{
-//         @include flexCenter(row);
-//         gap: 27px;
-//         overflow-x: scroll;
-//         margin-block-start: 31px;
+.home-decoration-container{
+    width: 80%;
+    margin: 61px auto 0;
+    .home-decoration-container__cards-container--flex{
+        @include flexCenter(row);
+        gap: 27px;
+        overflow-x: scroll;
+        margin-block-start: 31px;
 
-//         .home-decoration-container__cards{
-//             width: max-content;
-//         }
+        .home-decoration-container__cards{
+            height: max-content;
+        }
 
-//         .home-decoration-container__card{
-//             width: 210px;
-//             position: relative;
-//             background-color: $secondary-color;
-//             border-radius: 5px;
-//             height: 52vh;
-//             padding-block-end: 24px;
+        .home-decoration-container__card{
+            width: 210px;
+            position: relative;
+            background-color: $secondary-color;
+            border-radius: 5px;
+            height: 52vh;
+            padding-block-end: 24px;
 
-//             .heart-img{
-//                 width: 22px;
-//                 position: absolute;
-//                 right: 8px;
-//                 top: 8px;
-//                 filter: invert(100%) sepia(0%) saturate(0) hue-rotate(9deg) brightness(50) contrast(100%);
-//             }
+            .heart-img{
+                width: 22px;
+                position: absolute;
+                right: 8px;
+                top: 8px;
+                filter: invert(100%) sepia(0%) saturate(0) hue-rotate(9deg) brightness(50) contrast(100%);
+            }
 
-//             .home-decoration-container__main-content {
-//                 width: 132px;
-//                 margin: auto;
+            .home-decoration-container__main-content {
+                width: 132px;
+                margin: auto;
 
 
-//                 .home-decoration-container__img{
-//                     margin-block-start: 31px;
-//                     width: 132px;
-//                     border-radius: 6px;
-//                 }
-//                 .home-decoration-container__info-container{
-//                     padding-block-end: 26px;
-//                     font-size: 14px;
-//                     color: white;
+                .home-decoration-container__img{
+                    margin-block-start: 31px;
+                    width: 132px;
+                    border-radius: 6px;
+                }
+                .home-decoration-container__info-container{
+                    padding-block-end: 26px;
+                    font-size: 14px;
+                    color: white;
 
-//                     .home-decoration-container span{
-//                         font-weight: 700;
-//                     }
+                    .home-decoration-container span{
+                        font-weight: 700;
+                    }
                     
-//                 }
+                }
                 
-//             }
+            }
             
             
-//         }
+        }
         
-//     }
+    }
     
-// }
+}
 .about-us{
     width: 80%;
     margin: 0 auto;
@@ -354,13 +352,16 @@ section{
             }
         } 
     }
-    .healthcare-container{
-        width: 90%;
-        .healthcare-container__cards-container--flex{
-            .healthcare-container__cards{
-                .healthcare-container__card{
-                    height: 53vh;
-                    padding: 0;
+    section{
+        .healthcare-container{
+            width: 90%;
+            .healthcare-container__cards-container--flex{
+                height: 46vh;
+                .healthcare-container__cards{
+                    .healthcare-container__card{
+                        height: 41vh;
+                        padding: 0;
+                    }
                 }
             }
         }
@@ -368,9 +369,10 @@ section{
     .home-decoration-container{
         width: 90%;
         .home-decoration-container__cards-container--flex{
+            height: 39vh;
             .home-decoration-container__cards{
                 .home-decoration-container__card{
-                    height: 47vh;
+                    height: 35vh;
                 }
             }
         }
@@ -428,13 +430,9 @@ section{
 }
 
 
-// MEdia Queries of Laptop
+// Media Queries of Laptop
 @media (min-width:1024px) {
 
-    // Universal
-    // h3{
-    //     font-size: 50px;
-    // }
     // Header
     .header{
         padding: 0 0 30px 23px;
@@ -456,23 +454,11 @@ section{
         }
     }
     .hero{
-        // display: flex;
-        // flex-direction: row-reverse;
-        // justify-content: space-around;
-        // align-items: center;
-        // padding-inline: 65px;
-        // width: 90%;
-        // margin-inline: auto;
-
         .hero__main-content{
-            // display: flex;
-            // flex-direction: row-reverse;
             justify-content: space-around;
             width: 100%;
-            // align-items: center;
             img{
                 width:40vw;
-                // height: 686px;
                 border-radius: 19px;
             }
             div{
@@ -495,22 +481,26 @@ section{
             }
         }
     }
-    .healthcare-container{
-        h3{
-        margin-block-end: 60px;
-        }
-        .healthcare-container__cards-container--flex{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            overscroll-behavior-y:none;
-            column-gap: 123px;
-            row-gap: 62px;
-            .healthcare-container__cards{
-                width: 22vw;
+    section{
+        .healthcare-container{
+            h3{
+            margin-block-end: 60px;
+            }
+            .healthcare-container__cards-container--flex{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                overscroll-behavior-y:none;
+                column-gap: 123px;
+                row-gap: 62px;
+                height: 69vh;
+                .healthcare-container__cards{
+                    width: 22vw;
 
-                .healthcare-container__card{
-                    width: auto;
+                    .healthcare-container__card{
+                        width: auto;
+                        height: 30vh;
+                    }
                 }
             }
         }
@@ -530,8 +520,8 @@ section{
             .home-decoration-container__cards{
                 width: 22vw;
                 .home-decoration-container__card{
-                    height: 53vh;
-                    width: auto;
+                    height: 25vh;
+
                 }
                 }
         }

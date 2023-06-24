@@ -72,25 +72,26 @@ h3 {
   margin-block: 12px 24px;
 }
 
-section .healthcare-container, section .home-decoration-container {
+section .healthcare-container {
   width: 80%;
   margin: 0 auto;
 }
-section .healthcare-container .healthcare-container h3, section .home-decoration-container .healthcare-container h3, section .healthcare-container .home-decoration-container h3, section .home-decoration-container .home-decoration-container h3 {
+section .healthcare-container .healthcare-container h3 {
   -webkit-margin-after: 31px;
           margin-block-end: 31px;
 }
-section .healthcare-container .healthcare-container__cards-container--flex, section .home-decoration-container .healthcare-container__cards-container--flex {
+section .healthcare-container .healthcare-container__cards-container--flex {
   display: flex;
   flex-direction: row;
   gap: 27px;
   overflow-x: scroll;
+  height: 54vh;
 }
-section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards {
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards {
   width: -moz-max-content;
   width: max-content;
 }
-section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card {
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card {
   width: 210px;
   position: relative;
   background-color: #FFDAC6;
@@ -99,32 +100,85 @@ section .healthcare-container .healthcare-container__cards-container--flex .heal
   -webkit-padding-after: 34px;
           padding-block-end: 34px;
 }
-section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .heart-img, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .heart-img {
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .heart-img {
   width: 22px;
   position: absolute;
   right: 8px;
   top: 8px;
   filter: invert(39%) sepia(62%) saturate(846%) hue-rotate(19deg) brightness(87%) contrast(92%);
 }
-section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content {
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content {
   width: 132px;
   margin: auto;
 }
-section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__img, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__img {
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__img {
   -webkit-margin-before: 31px;
           margin-block-start: 31px;
   width: 132px;
   border-radius: 6px;
 }
-section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container {
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container {
   -webkit-padding-after: 26px;
           padding-block-end: 26px;
   font-size: 14px;
   color: #7C6A0A;
 }
-section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container .healthcare-container span, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container .healthcare-container span, section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container .home-decoration-container span, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container .home-decoration-container span {
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container .healthcare-container span {
   font-weight: 700;
 }
+
+.home-decoration-container {
+  width: 80%;
+  margin: 61px auto 0;
+}
+.home-decoration-container .home-decoration-container__cards-container--flex {
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+  overflow-x: scroll;
+  -webkit-margin-before: 31px;
+          margin-block-start: 31px;
+}
+.home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__cards {
+  height: -moz-max-content;
+  height: max-content;
+}
+.home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__card {
+  width: 210px;
+  position: relative;
+  background-color: #BABD8D;
+  border-radius: 5px;
+  height: 52vh;
+  -webkit-padding-after: 24px;
+          padding-block-end: 24px;
+}
+.home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__card .heart-img {
+  width: 22px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  filter: invert(100%) sepia(0%) saturate(0) hue-rotate(9deg) brightness(50) contrast(100%);
+}
+.home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__card .home-decoration-container__main-content {
+  width: 132px;
+  margin: auto;
+}
+.home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__card .home-decoration-container__main-content .home-decoration-container__img {
+  -webkit-margin-before: 31px;
+          margin-block-start: 31px;
+  width: 132px;
+  border-radius: 6px;
+}
+.home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__card .home-decoration-container__main-content .home-decoration-container__info-container {
+  -webkit-padding-after: 26px;
+          padding-block-end: 26px;
+  font-size: 14px;
+  color: white;
+}
+.home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__card .home-decoration-container__main-content .home-decoration-container__info-container .home-decoration-container span {
+  font-weight: 700;
+}
+
 .about-us {
   width: 80%;
   margin: 0 auto;
@@ -291,18 +345,24 @@ section .healthcare-container .healthcare-container__cards-container--flex .heal
     -webkit-margin-before: 44px;
             margin-block-start: 44px;
   }
-  .healthcare-container, section .home-decoration-container {
+  section .healthcare-container {
     width: 90%;
   }
-  .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card {
-    height: 53vh;
+  section .healthcare-container .healthcare-container__cards-container--flex {
+    height: 46vh;
+  }
+  section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card {
+    height: 41vh;
     padding: 0;
   }
   .home-decoration-container {
     width: 90%;
   }
+  .home-decoration-container .home-decoration-container__cards-container--flex {
+    height: 39vh;
+  }
   .home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__cards .home-decoration-container__card {
-    height: 47vh;
+    height: 35vh;
   }
   .about-us {
     width: 90%;
@@ -397,11 +457,11 @@ section .healthcare-container .healthcare-container__cards-container--flex .heal
     font-size: 23px;
     align-self: self-start;
   }
-  .healthcare-container h3, section .home-decoration-container h3 {
+  section .healthcare-container h3 {
     -webkit-margin-after: 60px;
             margin-block-end: 60px;
   }
-  .healthcare-container .healthcare-container__cards-container--flex, section .home-decoration-container .healthcare-container__cards-container--flex {
+  section .healthcare-container .healthcare-container__cards-container--flex {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -409,12 +469,14 @@ section .healthcare-container .healthcare-container__cards-container--flex .heal
     -moz-column-gap: 123px;
          column-gap: 123px;
     row-gap: 62px;
+    height: 69vh;
   }
-  .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards {
+  section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards {
     width: 22vw;
   }
-  .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card {
+  section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card {
     width: auto;
+    height: 30vh;
   }
   .home-decoration-container h3 {
     margin: 73px 0 64px;
@@ -431,8 +493,7 @@ section .healthcare-container .healthcare-container__cards-container--flex .heal
     width: 22vw;
   }
   .home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__cards .home-decoration-container__card {
-    height: 53vh;
-    width: auto;
+    height: 25vh;
   }
   .about-us h3 {
     -webkit-margin-before: 91px;
