@@ -1,0 +1,498 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  min-width: 320px;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFEFE7;
+}
+
+.header p, .hero p, h3, h2, h1, .healthcare-container p, .home-decoration-container p {
+  color: #7C6A0A;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.header {
+  min-width: 320px;
+  filter: invert(39%) sepia(62%) saturate(846%) hue-rotate(19deg) brightness(87%) contrast(92%);
+}
+.header .header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.header .header__nav p {
+  font-size: 20px;
+  color: red;
+}
+.header .header__nav .header__icons--bg {
+  display: none;
+}
+.header .header__nav .header__icons--bg a {
+  text-decoration: none;
+}
+
+.hero .hero__main-content {
+  width: 80%;
+  min-width: 288px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.hero .hero__main-content div {
+  display: flex;
+  flex-direction: column;
+}
+.hero img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 21px;
+  width: 100%;
+}
+.hero h1 {
+  font-size: 28px;
+}
+.hero a {
+  color: white;
+  background-color: #FA9500;
+  padding: 10px;
+  width: 124px;
+  display: inline-block;
+  border-radius: 45px;
+  text-align: center;
+  text-decoration: none;
+  align-self: center;
+  margin-block: 12px 24px;
+}
+
+section .healthcare-container, section .home-decoration-container {
+  width: 80%;
+  margin: 0 auto;
+}
+section .healthcare-container .healthcare-container h3, section .home-decoration-container .healthcare-container h3, section .healthcare-container .home-decoration-container h3, section .home-decoration-container .home-decoration-container h3 {
+  -webkit-margin-after: 31px;
+          margin-block-end: 31px;
+}
+section .healthcare-container .healthcare-container__cards-container--flex, section .home-decoration-container .healthcare-container__cards-container--flex {
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+  overflow-x: scroll;
+}
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards {
+  width: -moz-max-content;
+  width: max-content;
+}
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card {
+  width: 210px;
+  position: relative;
+  background-color: #FFDAC6;
+  border-radius: 5px;
+  height: 329px;
+  -webkit-padding-after: 34px;
+          padding-block-end: 34px;
+}
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .heart-img, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .heart-img {
+  width: 22px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  filter: invert(39%) sepia(62%) saturate(846%) hue-rotate(19deg) brightness(87%) contrast(92%);
+}
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content {
+  width: 132px;
+  margin: auto;
+}
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__img, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__img {
+  -webkit-margin-before: 31px;
+          margin-block-start: 31px;
+  width: 132px;
+  border-radius: 6px;
+}
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container {
+  -webkit-padding-after: 26px;
+          padding-block-end: 26px;
+  font-size: 14px;
+  color: #7C6A0A;
+}
+section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container .healthcare-container span, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container .healthcare-container span, section .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container .home-decoration-container span, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card .healthcare-container__main-content .healthcare-container__info-container .home-decoration-container span {
+  font-weight: 700;
+}
+.about-us {
+  width: 80%;
+  margin: 0 auto;
+  min-width: 320px;
+}
+.about-us .about-us h3 {
+  margin: 60px 0 83px 33px;
+}
+.about-us .about-us__main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us .about-us__main-container img:first-child {
+  width: 71px;
+}
+.about-us .about-us__main-container #lightbulb-img {
+  -webkit-margin-before: 65px;
+          margin-block-start: 65px;
+  height: 88px;
+}
+.about-us .about-us__main-container p {
+  color: #E86424;
+  text-align: center;
+}
+
+.galery-style {
+  width: 90%;
+  margin: 0 auto;
+}
+.galery-style .galery-style__imgs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  -webkit-margin-after: 61px;
+          margin-block-end: 61px;
+}
+.galery-style .galery-style__imgs-container img {
+  width: auto;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.location {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  -webkit-margin-after: 95px;
+          margin-block-end: 95px;
+}
+.location h3 {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+.location img {
+  border-radius: 10px;
+  margin-block: 36px 44px;
+  width: 90vw;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.location h4 {
+  font-weight: 500;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-size: 20px;
+}
+.location p, .location h4 {
+  color: #FA9500;
+}
+.location p {
+  -webkit-margin-before: 8px;
+          margin-block-start: 8px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #FA9500;
+  color: white;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul h4 {
+  margin-bottom: 19px;
+  padding-top: 20px;
+  font-size: 38px;
+}
+.footer ul li {
+  -webkit-margin-after: 14px;
+          margin-block-end: 14px;
+}
+.footer ul .footer__icons {
+  padding: 15px 0 22px;
+  display: flex;
+  align-items: center;
+}
+.footer ul .footer__icons img {
+  width: 26px;
+  -webkit-margin-end: 32px;
+          margin-inline-end: 32px;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 40px;
+  }
+  p, a {
+    font-size: 15px;
+  }
+  li {
+    font-size: 15px;
+  }
+  .header .header__nav {
+    width: 85%;
+  }
+  .header .header__nav p {
+    font-size: 26px;
+  }
+  .header .icons {
+    display: flex;
+    align-items: center;
+    -webkit-padding-before: 5px;
+            padding-block-start: 5px;
+  }
+  .header .icons a {
+    -webkit-margin-start: 21px;
+            margin-inline-start: 21px;
+  }
+  .header .icons .header__icons--bg {
+    display: block;
+  }
+  .header .icons .header__menu--mobile {
+    display: none;
+  }
+  .header .icons img {
+    width: 29px;
+  }
+  .hero .hero__main-content {
+    width: 95%;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .hero .hero__main-content img {
+    width: 31vw;
+  }
+  .hero .hero__main-content div {
+    width: 49%;
+  }
+  .hero .hero__main-content div h1 {
+    font-size: 40px;
+  }
+  .hero .hero__main-content div p {
+    font-size: 15px;
+  }
+  .hero .hero__main-content div a {
+    width: 154px;
+    padding: 12px;
+    align-self: self-start;
+    font-size: 15px;
+    -webkit-margin-before: 44px;
+            margin-block-start: 44px;
+  }
+  .healthcare-container, section .home-decoration-container {
+    width: 90%;
+  }
+  .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card {
+    height: 53vh;
+    padding: 0;
+  }
+  .home-decoration-container {
+    width: 90%;
+  }
+  .home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__cards .home-decoration-container__card {
+    height: 47vh;
+  }
+  .about-us {
+    width: 90%;
+  }
+  .about-us .about-us__main-container {
+    margin-block: 14vh;
+    flex-direction: row;
+  }
+  .about-us .about-us__main-container img:first-child {
+    width: 18vw;
+  }
+  .about-us .about-us__main-container #lightbulb-img {
+    width: 22vw;
+    height: auto;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+  }
+  .galery-style .galery-style__imgs-container {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+  }
+  .galery-style .galery-style__imgs-container img {
+    width: 23vw;
+  }
+  .location img {
+    width: 85vw;
+    height: 32vh;
+  }
+  .location h4 {
+    font-size: 28px;
+  }
+  .footer ul {
+    font-size: 24px;
+  }
+  .footer ul h4 {
+    font-size: 24px;
+  }
+  .footer ul .footer__icons {
+    padding: 33px 0 22px;
+    justify-content: center;
+  }
+  .footer ul .footer__icons img {
+    width: 37px;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    padding: 0 0 30px 23px;
+  }
+  .header .header__nav {
+    width: 100%;
+  }
+  .header .header__nav .header__icons--bg {
+    display: block;
+  }
+  .header .header__nav a {
+    text-decoration: none;
+  }
+  .header .header__nav img {
+    -webkit-margin-end: 22px;
+            margin-inline-end: 22px;
+    width: 36px;
+  }
+  .header .header__nav .header__menu--mobile {
+    display: none;
+  }
+  .hero .hero__main-content {
+    justify-content: space-around;
+    width: 100%;
+  }
+  .hero .hero__main-content img {
+    width: 40vw;
+    border-radius: 19px;
+  }
+  .hero .hero__main-content div {
+    width: 52vw;
+  }
+  .hero .hero__main-content div h1 {
+    -webkit-margin-after: 30px;
+            margin-block-end: 30px;
+    font-size: 45px;
+  }
+  .hero .hero__main-content div p {
+    margin-block: 0;
+    font-size: 25px;
+  }
+  .hero .hero__main-content div a {
+    margin: 56px 0 131px;
+    width: 261px;
+    padding: 16px 0;
+    font-size: 23px;
+    align-self: self-start;
+  }
+  .healthcare-container h3, section .home-decoration-container h3 {
+    -webkit-margin-after: 60px;
+            margin-block-end: 60px;
+  }
+  .healthcare-container .healthcare-container__cards-container--flex, section .home-decoration-container .healthcare-container__cards-container--flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    overscroll-behavior-y: none;
+    -moz-column-gap: 123px;
+         column-gap: 123px;
+    row-gap: 62px;
+  }
+  .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards {
+    width: 22vw;
+  }
+  .healthcare-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card, section .home-decoration-container .healthcare-container__cards-container--flex .healthcare-container__cards .healthcare-container__card {
+    width: auto;
+  }
+  .home-decoration-container h3 {
+    margin: 73px 0 64px;
+  }
+  .home-decoration-container .home-decoration-container__cards-container--flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    -moz-column-gap: 124px;
+         column-gap: 124px;
+    row-gap: 62px;
+  }
+  .home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__cards {
+    width: 22vw;
+  }
+  .home-decoration-container .home-decoration-container__cards-container--flex .home-decoration-container__cards .home-decoration-container__card {
+    height: 53vh;
+    width: auto;
+  }
+  .about-us h3 {
+    -webkit-margin-before: 91px;
+            margin-block-start: 91px;
+  }
+  .about-us .about-us__main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .about-us .about-us__main-container img,
+  .about-us .about-us__main-container p,
+  .about-us .about-us__main-container #lightbulb-img {
+    margin: 0;
+  }
+  .about-us .about-us__main-container p {
+    width: auto;
+    font-size: 22px;
+  }
+  .about-us .about-us__main-container #lightbulb-img {
+    -webkit-margin-start: 206px;
+            margin-inline-start: 206px;
+  }
+  .galery-style h3 {
+    margin: 231px 0 61px;
+  }
+  .galery-style .galery-style__imgs-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .galery-style .galery-style__imgs-container img {
+    width: 265px;
+    border-radius: 19px;
+  }
+  .location img {
+    width: 92vw;
+    height: 55vh;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer ul h4 {
+    font-size: 38px;
+  }
+  .footer ul li {
+    font-size: 22px;
+  }
+  .footer .footer__icons {
+    align-self: center;
+    -webkit-margin-start: 34vw;
+            margin-inline-start: 34vw;
+  }
+  .footer .footer__icons img {
+    width: 51vw;
+  }
+}
+@media (min-width: 1440px) {
+  .location img {
+    width: 30vw;
+  }
+}/*# sourceMappingURL=main.css.map */
